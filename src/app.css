@@ -3,6 +3,17 @@
 
 @theme {
   --font-rubik: "Rubik", sans-serif;
+
+  --color-blue-950: rgba(36, 42, 69);
+  --color-blue-950-50pc: rgba(36, 42, 69, 0.5);
+  --color-blue-950-75pc: rgba(36, 42, 69, 0.75);
+  --color-blue-600: rgba(82, 103, 223);
+  --color-grey-600: rgba(91, 96, 116);
+  --color-grey-600-75pc: rgba(91, 96, 116, 0.75);
+  --color-grey-50: rgba(247, 247, 247);
+  --color-red-400: rgba(250, 89, 89);
+
+  --shadow-submit: 0 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
 @utility sr-only {
@@ -15,4 +26,35 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.button-base {
+  @apply text-sm/7 text-white font-medium pt-2 pb-2 pl-5 pr-5 border-2 border-blue-600 rounded-md bg-blue-600;
+}
+
+.button-base:hover,
+.button-base:focus,
+.button-base:focus-visible {
+  @apply text-blue-600 bg-white outline-0;
+}
+
+.button-variant {
+  @apply text-blue-950-75pc border-grey-50 bg-grey-50;
+
+}
+
+.button-variant:hover,
+.button-variant:focus,
+.button-variant:focus-visible {
+  @apply text-grey-600-75pc bg-white border-grey-600 outline-0;
+}
+
+[type="submit"] {
+  @apply bg-red-400 border-red-400 shadow-submit;
+}
+
+[type="submit"]:hover,
+[type="submit"]:focus,
+[type="submit"]:focus-visible {
+  @apply text-red-400;
 }
