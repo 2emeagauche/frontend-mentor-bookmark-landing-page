@@ -56,162 +56,175 @@
     </header>
 
     <main>
-      <div>
-        <h1 class="text-3xl font-medium">A Simple Bookmark Manager</h1>
+      <div class="pl-8 pr-8 mt-32 mb-32 text-center">
+        <h1 class="mb-6 text-3xl/snug text-balance font-medium">A Simple Bookmark Manager</h1>
 
-        <p class="text-sm text-blue-950-50pc">A clean and simple interface to organize your favourite websites.
+        <p class="mb-6 text-[.9375rem]/6 text-blue-950-50pc">A clean and simple interface to
+          organize your favourite websites.
           Open
           a
           new
           browser tab and see your sites load instantly. Try it for free.</p>
 
-        <div>
-          <button class="button-base">Get it on Chrome</button>
-          <button class="button-base button-variant">Get it on Firefox</button>
+        <div class="flex gap-4 justify-center">
+          <button class="button-base grow">Get it on Chrome</button>
+          <button class="button-base button-variant grow">Get it on Firefox</button>
         </div>
       </div>
 
-      <h2 class="text-3xl font-medium">Features</h2>
-      <p class="text-sm text-blue-950-50pc">Our aim is to make it quick and easy for you to access your favourite
-        websites.
-        Your bookmarks sync between your devices so you can access them on the
-        go.</p>
+      <div class="pl-8 pr-8 mt-32 mb-32 text-center">
+        <h2 class="mb-6 text-3xl/snug text-balance font-medium">Features</h2>
+        <p class="mb-6 text-[.9375rem]/6 text-blue-950-50pc">Our aim is to make it quick and
+          easy for you to access your favourite
+          websites.
+          Your bookmarks sync between your devices so you can access them on the
+          go.</p>
 
-      <div class="tabs automatic" role="tablist" aria-label="tabs of features">
-        <button role="tab" aria-selected="false" id="tab1-button"
-          aria-controls="tab1" tabindex="0">Simple
-          Bookmarking</button>
-        <button role="tab" aria-selected="false" id="tab2-button"
-          aria-controls="tab2" tabindex="-1">Speedy Searching</button>
-        <button role="tab" aria-selected="false" id="tab3-button"
-          aria-controls="tab3" tabindex="-1">Easy Sharing</button>
-      </div>
+        <div class="tabs automatic" role="tablist"
+          aria-label="tabs of features">
+          <button class="tab" role="tab" aria-selected="false" id="tab1-button"
+            aria-controls="tab1" tabindex="0">Simple
+            Bookmarking</button>
+          <button class="tab" role="tab" aria-selected="false" id="tab2-button"
+            aria-controls="tab2" tabindex="-1">Speedy Searching</button>
+          <button class="tab" role="tab" aria-selected="false" id="tab3-button"
+            aria-controls="tab3" tabindex="-1">Easy Sharing</button>
+        </div>
 
-      <div class="tab-content">
-        <div role="tabpanel" id="tab1" aria-labelledby="tab1-button"
-          tabindex="0">
-          <h3 class="text-3xl font-medium">Bookmark in one click</h3>
-          <p class="text-sm text-blue-950-50pc">Organize your bookmarks however you like. Our simple drag-and-drop
-            interface
-            gives you complete control over how you manage your favourite
-            sites.</p>
-          <a class="button-base" href="/">More Info</a>
-        </div>
-        <div role="tabpanel" id="tab2" aria-labelledby="tab2-button" hidden>
-          <h3 class="text-3xl font-medium">Intelligent search</h3>
-          <p class="text-sm text-blue-950-50pc">Our powerful search feature will help you find saved sites in no
-            time
-            at
-            all.
-            No need to trawl through all of your bookmarks.</p>
-          <a class="button-base" href="/">More Info</a>
-        </div>
-        <div role="tabpanel" id="tab3" aria-labelledby="tab3-button" hidden>
-          <h3 class="text-3xl font-medium">Share your bookmarks</h3>
-          <p class="text-sm text-blue-950-50pc">Easily share your bookmarks and collections with others. Create a
-            shareable
-            link that you can send at the click of a button.</p>
-          <a class="button-base" href="/">More Info</a>
-        </div>
-      </div>
-
-      <h2 class="text-3xl font-medium">Download the extension</h2>
-      <p class="text-sm text-blue-950-50pc">We’ve got more browsers in the pipeline. Please do let us know if
-        you’ve
-        got a favourite you’d like us to prioritize.</p>
-
-      <div class="extension-cards-group">
-        <div class="extension-card">
-          <h3 class="text-2xl font-medium">Add to Chrome</h3>
-          <p class="text-sm text-blue-950-50pc">Minimum version 62</p>
-          <button class="button-base">Add & Install Extension</button>
-        </div>
-        <div class="extension-card">
-          <h3 class="text-2xl font-medium">Add to Firefox</h3>
-          <p class="text-sm text-blue-950-50pc">Minimum version 55</p>
-          <button class="button-base">Add & Install Extension</button>
-        </div>
-        <div class="extension-card">
-          <h3 class="text-2xl font-medium">Add to Opera</h3>
-          <p class="text-sm text-blue-950-50pc">Minimum version 46</p>
-          <button class="button-base">Add & Install Extension</button>
+        <div class="tab-content">
+          <div role="tabpanel" id="tab1" aria-labelledby="tab1-button"
+            tabindex="0">
+            <h3 class="mb-4 text-3xl/snug text-balance font-medium">Bookmark in one click</h3>
+            <p class="mb-4 text-[.9375rem]/6 text-blue-950-50pc">Organize your bookmarks
+              however you like. Our simple drag-and-drop
+              interface
+              gives you complete control over how you manage your favourite
+              sites.</p>
+            <a class="button-base inline-block pl-5 pr-5" href="/">More Info</a>
+          </div>
+          <div role="tabpanel" id="tab2" aria-labelledby="tab2-button" hidden>
+            <h3 class="mb-4 text-3xl/snug text-balance font-medium">Intelligent search</h3>
+            <p class="mb-4 text-[.9375rem]/6 text-blue-950-50pc">Our powerful search feature
+              will help you find saved sites in no
+              time
+              at
+              all.
+              No need to trawl through all of your bookmarks.</p>
+            <a class="button-base inline-block pl-5 pr-5" href="/">More Info</a>
+          </div>
+          <div role="tabpanel" id="tab3" aria-labelledby="tab3-button" hidden>
+            <h3 class="mb-4 text-3xl/snug text-balance font-medium">Share your bookmarks</h3>
+            <p class="mb-4 text-[.9375rem]/6 text-blue-950-50pc">Easily share your bookmarks
+              and collections with others. Create a
+              shareable
+              link that you can send at the click of a button.</p>
+            <a class="button-base inline-block pl-5 pr-5" href="/">More Info</a>
+          </div>
         </div>
       </div>
+      <div class="pl-8 pr-8 mt-32 mb-32 text-center">
+        <h2 class="text-3xl/snug text-balance font-medium">Download the extension</h2>
+        <p class="text-[.9375rem]/6 text-blue-950-50pc">We’ve got more browsers in the
+          pipeline. Please do let us know if
+          you’ve
+          got a favourite you’d like us to prioritize.</p>
 
-      <h2 class="text-3xl font-medium">Frequently Asked Questions</h2>
-      <p class="text-sm text-blue-950-50pc">Here are some of our FAQs. If you have any other questions you’d like
-        answered please feel free to email us.</p>
-      <div class="questions-answers">
-        <h3><button id="question1" aria-expanded="false"
-            aria-controls="answer1">What is Bookmark?</button></h3>
-
-        <section id="answer1" aria-labelledby="question1" hidden>
-          <p class="text-sm text-blue-950-50pc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            tincidunt
-            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam
-            ornare mattis.
-          </p>
-        </section>
-
-        <h3><button id="question2" aria-expanded="false"
-            aria-controls="answer2">How can I request a new
-            browser?</button></h3>
-
-        <section id="answer2" aria-labelledby="question2" hidden>
-          <p class="text-sm text-blue-950-50pc">
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula.
-            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
-            aliquet convallis ultricies.
-            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-          </p>
-        </section>
-
-        <h3><button id="question3" aria-expanded="false"
-            aria-controls="answer3">Is there a mobile app?</button></h3>
-
-        <section id="answer3" aria-labelledby="question3" hidden>
-          <p class="text-sm text-blue-950-50pc">
-            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-            vestibulum dolor, ut condimentum
-            urna vulputate eget. Cras in ligula quis est pharetra mattis sit
-            amet
-            pharetra purus. Sed
-            sollicitudin ex et ultricies bibendum.
-          </p>
-        </section>
-
-        <h3><button id="question4" aria-expanded="false"
-            aria-controls="answer4">What about other Chromium
-            browsers?</button></h3>
-
-        <section id="answer4" aria-labelledby="question4" hidden>
-          <p class="text-sm text-blue-950-50pc">
-            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
-            mi, at euismod dui. Aliquam
-            vitae neque eget nisl gravida pellentesque non ut velit.
-          </p>
-        </section>
+        <div class="extension-cards-group">
+          <div class="extension-card">
+            <h3 class="text-2xl font-medium">Add to Chrome</h3>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">Minimum version 62</p>
+            <button class="button-base pl-5 pr-5">Add & Install Extension</button>
+          </div>
+          <div class="extension-card">
+            <h3 class="text-2xl font-medium">Add to Firefox</h3>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">Minimum version 55</p>
+            <button class="button-base pl-5 pr-5">Add & Install Extension</button>
+          </div>
+          <div class="extension-card">
+            <h3 class="text-2xl font-medium">Add to Opera</h3>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">Minimum version 46</p>
+            <button class="button-base pl-5 pr-5">Add & Install Extension</button>
+          </div>
+        </div>
       </div>
+      <div class="pl-8 pr-8 mt-32 mb-32 text-center">
+        <h2 class="text-3xl/snug text-balance font-medium">Frequently Asked Questions</h2>
+        <p class="text-[.9375rem]/6 text-blue-950-50pc">Here are some of our FAQs. If you
+          have any other questions you’d like
+          answered please feel free to email us.</p>
+        <div class="questions-answers">
+          <h3><button id="question1" aria-expanded="false"
+              aria-controls="answer1">What is Bookmark?</button></h3>
 
-      <a class="button-base" href="/">More Info</a>
+          <section id="answer1" aria-labelledby="question1" hidden>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam
+              ornare mattis.
+            </p>
+          </section>
 
-      <div>
+          <h3><button id="question2" aria-expanded="false"
+              aria-controls="answer2">How can I request a new
+              browser?</button></h3>
+
+          <section id="answer2" aria-labelledby="question2" hidden>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa,
+              ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis
+              ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+              aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </section>
+
+          <h3><button id="question3" aria-expanded="false"
+              aria-controls="answer3">Is there a mobile app?</button></h3>
+
+          <section id="answer3" aria-labelledby="question3" hidden>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit
+              amet
+              pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </section>
+
+          <h3><button id="question4" aria-expanded="false"
+              aria-controls="answer4">What about other Chromium
+              browsers?</button></h3>
+
+          <section id="answer4" aria-labelledby="question4" hidden>
+            <p class="text-[.9375rem]/6 text-blue-950-50pc">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat
+              mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </section>
+        </div>
+
+        <a class="button-base inline-block pl-5 pr-5" href="/">More Info</a>
+      </div>
+      <div class="bg-blue-600 text-white text-center pl-8 pr-8 pt-12 pb-12">
         <p>35,000+ already joined</p>
 
         <h2>Stay up-to-date with what we’re doing</h2>
 
         <form>
           <input type="email" placeholder="Enter your email address">
-          <button class="button-base" type="submit">Contact Us</button>
+          <button class="button-base pl-5 pr-5" type="submit">Contact Us</button>
         </form>
       </div>
     </main>
 
-    <footer>
+    <footer class="bg-blue-950 text-white text-center pt-8 pb-8">
       <p class="sr-only" id="footer-bookmark-logo-label">Brand logo of
         Bookmark</p>
       <svg role="image" aria-labelledby="footer-bookmark-logo-label" width="148"

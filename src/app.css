@@ -12,8 +12,9 @@
   --color-grey-600-75pc: rgba(91, 96, 116, 0.75);
   --color-grey-50: rgba(247, 247, 247);
   --color-red-400: rgba(250, 89, 89);
+  --color-faint-blue: rgba(73, 93, 207, 0.2);
 
-  --shadow-submit: 0 8px 8px -4px rgba(73, 93, 207, 0.2);
+  --shadow-submit: 0 8px 8px -4px --color-faint-blue;
 }
 
 @utility sr-only {
@@ -29,7 +30,7 @@
 }
 
 .button-base {
-  @apply text-sm/7 text-white font-medium pt-2 pb-2 pl-5 pr-5 border-2 border-blue-600 rounded-md bg-blue-600;
+  @apply text-[.9375rem]/6 text-white font-medium pt-2 pb-2 border-2 border-blue-600 rounded-md bg-blue-600;
 }
 
 .button-base:hover,
@@ -49,6 +50,10 @@
   @apply text-grey-600-75pc bg-white border-grey-600 outline-0;
 }
 
+.button-base:has(class^="flex") {
+  @apply pl-1 pr-1;
+}
+
 [type="submit"] {
   @apply bg-red-400 border-red-400 shadow-submit;
 }
@@ -57,4 +62,22 @@
 [type="submit"]:focus,
 [type="submit"]:focus-visible {
   @apply text-red-400;
+}
+
+.tab {
+  @apply block w-full m-auto h-14 border-b border-faint-blue;
+}
+
+.tab:first-child {
+  @apply border-t;
+}
+
+.tab[aria-selected="false"]:hover,
+.tab:focus,
+.tab:focus-visible {
+  @apply text-red-400 outline-0;
+}
+
+.tab[aria-selected="true"] {
+  @apply underline underline-offset-17 decoration-4 decoration-red-400;
 }
