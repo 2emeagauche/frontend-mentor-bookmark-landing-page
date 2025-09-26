@@ -15,6 +15,7 @@
   --color-faint-blue: rgba(73, 93, 207, 0.2);
 
   --shadow-submit: 0 8px 8px -4px --color-faint-blue;
+  --shadow-card: 0 10px 20px -5px rgba(73, 93, 207, 0.2);
 }
 
 @utility sr-only {
@@ -80,4 +81,19 @@
 
 .tab[aria-selected="true"] {
   @apply underline underline-offset-17 decoration-4 decoration-red-400;
+}
+
+.img-bg {
+  @apply relative;
+
+}
+
+.bg-of-img {
+  @apply absolute top-[16%] h-full object-cover;
+
+}
+
+.img-with-bg {
+  @apply relative w-full;
+
 }

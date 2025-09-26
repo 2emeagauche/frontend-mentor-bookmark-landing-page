@@ -154,4 +154,48 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  const form = document.querySelector("form");
+
+  function validateField(field) {
+    const errorEl = field.parentElement.querySelector(".error-message");
+
+    if (!field.validity.valid) {
+      errorEl.textContent = field.dataset.error || "This field is required";
+      return false;
+    }
+
+    errorEl.textContent = "";
+    return true;
+  }
+
+  form.querySelectorAll("input").forEach((input) => {
+    input.addEventListener("blur", () => {
+      validateField(input);
+    });
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const fields = form.querySelectorAll("input");
+
+    fields.forEach((field) => {
+      console.log(`Checking ${field.name}`);
+      const fieldValid = validateField(field);
+
+      if (!fieldValid) {
+        isValid = false;
+      }
+    });
+
+    if (isValid) {
+      // send form data
+      form.reset();
+    } else {
+      form.querySelector(":invalid").focus();
+    }
+  });
 });
