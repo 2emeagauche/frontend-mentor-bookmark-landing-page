@@ -129,10 +129,16 @@ class TabsAutomatic {
 // Initialize components
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  // Initialize tabs component
+
   const tablists = document.querySelectorAll('[role=tablist].automatic');
   for (let i = 0; i < tablists.length; i++) {
     new TabsAutomatic(tablists[i]);
   }
+
+
+  // Deal with the Accordion
 
   const accordionButtons = document.querySelectorAll(".questions-answers button");
 
@@ -154,6 +160,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+  // Validate Contact Form
 
   const form = document.querySelector("form");
 
@@ -197,5 +206,24 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       form.querySelector(":invalid").focus();
     }
+  });
+
+
+  // Manage mobile menu
+
+  const menu = document.querySelector(".menu-container");
+  const menuButton = document.querySelector(".mobile-nav-toggle");
+
+  menuButton.addEventListener('click', (e) => {
+    let isVisible = menu.dataset.visible;
+
+    if(isVisible === 'false'){
+      menu.dataset.visible = true;
+      e.target.setAttribute('aria-expanded', 'true');
+    } else {
+      menu.dataset.visible = false;
+      e.target.setAttribute('aria-expanded', 'false');
+    }
+
   });
 });

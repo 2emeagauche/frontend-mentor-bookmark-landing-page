@@ -7,6 +7,7 @@
   --color-blue-950: rgba(36, 42, 69);
   --color-blue-950-50pc: rgba(36, 42, 69, 0.5);
   --color-blue-950-75pc: rgba(36, 42, 69, 0.75);
+  --color-blue-950-95pc: rgba(36, 42, 69, 0.95);
   --color-blue-600: rgba(82, 103, 223);
   --color-grey-600: rgba(91, 96, 116);
   --color-grey-600-75pc: rgba(91, 96, 116, 0.75);
@@ -31,7 +32,7 @@
 }
 
 .button-base {
-  @apply text-[.9375rem]/6 text-white font-medium pt-2 pb-2 border-2 border-blue-600 rounded-md bg-blue-600;
+  @apply text-white pt-2 pb-2 border-2 border-blue-600 rounded-md bg-blue-600;
 }
 
 .button-base:hover,
@@ -53,6 +54,10 @@
 
 .button-base:has(class^="flex") {
   @apply pl-1 pr-1;
+}
+
+.button-login {
+  @apply border-white bg-transparent;
 }
 
 [type="submit"] {
