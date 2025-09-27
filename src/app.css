@@ -31,6 +31,30 @@
   border-width: 0;
 }
 
+/* Header Menu */
+.primary-navigation {
+  @apply h-24 flex justify-between items-center;
+}
+
+.logo-plus-burger {
+  @apply relative z-1500 fill-blue-950 group-has-[div[data-visible='true']]:fill-white
+}
+
+.mobile-nav-toggle {
+  @apply relative z-2000 bg-[url(/assets/images/icon-hamburger.svg)] group-has-[div[data-visible='true']]:bg-[url(/assets/images/icon-close.svg)] bg-center bg-no-repeat w-[1.125rem] aspect-square
+}
+
+.menu-container {
+  @apply fixed z-1000 inset-0 pt-26 pr-8 pb-12 pl-8 transform-[translateX(100%)] data-[visible='true']:transform-[translateX(0%)] transition-transform bg-blue-950-95pc flex flex-col justify-between text-[1.25rem] leading-tight text-white uppercase
+}
+
+.menu-container li {
+  @apply block pt-6 pb-6 border-t border-grey-600-75pc text-center;
+}
+
+/* *********** */
+
+/* Buttons */
 .button-base {
   @apply text-white pt-2 pb-2 border-2 border-blue-600 rounded-md bg-blue-600;
 }
@@ -70,6 +94,13 @@
   @apply text-red-400;
 }
 
+.button-login {
+  @apply block text-[1.25rem] leading-tight font-medium;
+}
+
+/* ********* */
+
+/* Tabs */
 .tab {
   @apply block w-full m-auto h-14 border-b border-faint-blue;
 }
@@ -88,6 +119,9 @@
   @apply underline underline-offset-17 decoration-4 decoration-red-400;
 }
 
+/* ******** */
+
+/* Image with round blue bg */
 .img-bg {
   @apply relative;
 
@@ -101,4 +135,10 @@
 .img-with-bg {
   @apply relative w-full;
 
+}
+
+/* *********** */
+
+.social-media-list {
+  @apply flex flex-row justify-center items-center gap-10;
 }

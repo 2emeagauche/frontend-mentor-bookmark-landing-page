@@ -20,20 +20,10 @@
       pl-8
       pr-8
     ">
-      <nav class="
-      group
-      h-24
-      flex
-      justify-between
-      items-center
-      "
+      <nav class="primary-navigation group"
       aria-label="Primary navigation">
 
-        <div class="
-        relative
-        z-1500
-        fill-blue-950 group-has-[div[data-visible='true']]:fill-white
-        ">
+        <div class="logo-plus-burger">
           <p class="sr-only" id="header-bookmark-logo-label">Brand logo of
             Bookmark</p>
           <svg class="" role="image" aria-labelledby="header-bookmark-logo-label"
@@ -47,94 +37,25 @@
                   fill="#FFF" /></g></g></svg>
         </div>
 
-        <button class="mobile-nav-toggle
-        relative
-        z-2000
-        bg-[url(/assets/images/icon-hamburger.svg)]
-        group-has-[div[data-visible='true']]:bg-[url(/assets/images/icon-close.svg)]
-        bg-center
-        bg-no-repeat
-        w-[1.125rem]
-        aspect-square
-        "
+        <button class="mobile-nav-toggle"
           aria-controls="primary-menu" aria-expanded="false">
           <span class="sr-only">Menu</span>
         </button>
 
-        <div class="menu-container
-        fixed
-        z-1000
-        inset-0
-        pt-26
-        pr-8
-        pb-12
-        pl-8
-        transform-[translateX(100%)]
-        data-[visible='true']:transform-[translateX(0%)]
-        transition-transform
-        bg-blue-950-95pc
-        flex
-        flex-col
-        justify-between
-        text-[1.25rem]
-        leading-tight
-        text-white
-        uppercase
-        "
+        <div class="menu-container"
         id="primary-menu"
         data-visible="false">
           <ul class="primary-menu">
-            <li class="
-            block
-            pt-6
-            pb-6
-            border-t
-            border-grey-600-75pc
-            text-center
-            "><a href="/"
+            <li class=""><a href="/"
                 aria-label="link to the features related page">Features</a></li>
-            <li class="
-            block
-            pt-6
-            pb-6
-            border-t
-            border-grey-600-75pc
-            text-center
-            "><a href="/"
+            <li class=""><a href="/"
                 aria-label="link to the pricing related page">Pricing</a></li>
-            <li class="
-            block
-            pt-6
-            pb-6
-            border-t
-            border-grey-600-75pc
-            text-center
-            "><a href="/"
+            <li class=""><a href="/"
                 aria-label="link to the contact related page">Contact</a></li>
-            <li class="
-            block
-            pt-6
-            pb-6
-            border-t
-            border-grey-600-75pc
-            text-center
-            "><a class="
-            button-base
-            button-login
-            block
-            text-[1.25rem]
-            leading-tight
-            font-medium
-            " href="/"
+            <li class=""><a class="button-base button-login" href="/"
                 aria-label="link to the login related page">Login</a></li>
           </ul>
-          <ul class="
-          flex
-          flex-row
-          justify-center
-          items-center
-          gap-10
-          ">
+          <ul class="social-media-list">
             <li><a href="/" aria-label="Link to the bookmark facebook page"><img
                   src="assets/images/icon-facebook.svg"
                   alt="logo facebook"></a></li>
@@ -485,7 +406,7 @@
               aria-label="link to the contact related page">Contact</a></li>
         </ul>
 
-        <ul class="mb-12 flex gap-10 items-center">
+        <ul class="mb-12 social-media-list">
           <li>
             <a class="group" href="/">
               <span class="sr-only" id="facebook-logo-label">Link to the
