@@ -17,6 +17,8 @@
 
   --shadow-submit: 0 8px 8px -4px --color-faint-blue;
   --shadow-card: 0 10px 20px -5px rgba(73, 93, 207, 0.2);
+
+  --breakpoint-ssm: 30rem;
 }
 
 @utility sr-only {
@@ -45,7 +47,7 @@
 }
 
 .menu-container {
-  @apply fixed z-1000 inset-0 pt-26 pr-8 pb-12 pl-8 transform-[translateX(100%)] data-[visible='true']:transform-[translateX(0%)] transition-transform bg-blue-950-95pc flex flex-col justify-between text-[1.25rem] leading-tight text-white uppercase
+  @apply fixed z-1000 inset-0 pt-26 pb-12 transform-[translateX(100%)] data-[visible='true']:transform-[translateX(0%)] transition-transform bg-blue-950-95pc flex flex-col justify-between text-[1.25rem] leading-tight text-white uppercase
 }
 
 .menu-container li {
@@ -106,7 +108,7 @@
 }
 
 .tab:first-child {
-  @apply border-t;
+  @apply border-t ssm:border-t-0;
 }
 
 .tab[aria-selected="false"]:hover,
@@ -123,12 +125,16 @@
 
 /* Image with round blue bg */
 .img-bg {
-  @apply relative;
+  @apply relative sm:max-w-[27.5rem] sm:mx-auto;
 
 }
 
+.img-bg-right {
+  @apply sm:ml-auto sm:mr-0;
+}
+
 .bg-of-img {
-  @apply absolute top-[16%] h-full object-cover;
+  @apply absolute top-[16%] left-[10%] object-top-left h-full object-cover max-w-min sm:top-auto sm:bottom-[-10%] sm:max-h-[21.875rem];
 
 }
 
@@ -137,8 +143,14 @@
 
 }
 
+.img-bg-right .bg-of-img {
+  @apply left-auto right-[10%] sm:right-[16%] object-top-right;
+
+}
+
+
 /* *********** */
 
 .social-media-list {
-  @apply flex flex-row justify-center items-center gap-10;
+  @apply flex flex-row justify-center items-center gap-10 ssm:gap-4;
 }

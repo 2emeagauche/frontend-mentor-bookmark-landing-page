@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize tabs component
 
-  const tablists = document.querySelectorAll('[role=tablist].automatic');
+  const tablists = document.querySelectorAll('[role=tablist].js-automatic');
   for (let i = 0; i < tablists.length; i++) {
     new TabsAutomatic(tablists[i]);
   }
