@@ -140,22 +140,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Deal with the Accordion
 
-  const accordionButtons = document.querySelectorAll(".questions-answers button");
+  const accordionQuestions = document.querySelectorAll(".question");
 
-  accordionButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const expanded = this.getAttribute("aria-expanded") === "true" || false;
-      const accordionPanel = document.getElementById(this.getAttribute("aria-controls"));
+  accordionQuestions.forEach((question) => {
+    question.addEventListener("click", function () {
+      console.log(this);
+      const expanded = this.firstElementChild.getAttribute("aria-expanded") === "true" || false;
+      const accordionPanel = document.getElementById(this.firstElementChild.getAttribute("aria-controls"));
 
-      accordionButtons.forEach((btn) => {
-        btn.setAttribute("aria-expanded", "false");
+      accordionQuestions.forEach((question) => {
+        question.firstElementChild.setAttribute("aria-expanded", "false");
         document.getElementById(
-          btn.getAttribute("aria-controls")
+          question.firstElementChild.getAttribute("aria-controls")
         ).hidden = true;
       });
 
       if (!expanded) {
-        this.setAttribute("aria-expanded", "true");
+        this.firstElementChild.setAttribute("aria-expanded", "true");
         accordionPanel.hidden = false;
       }
     });

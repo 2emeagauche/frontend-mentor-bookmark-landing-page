@@ -15,9 +15,10 @@
     <script src="assets/js/components.js" defer></script>
   </head>
   <body
-    class="font-rubik text-blue-950 relative has-[div[data-visible='true']]:overflow-y-hidden">
+    class="font-rubik text-blue-950 relative max-w-[90rem] mx-auto overflow-x-hidden has-[div[data-visible='true']]:overflow-y-hidden">
 
-    <header class="pl-8 pr-8 sm:pl-20 sm:pr-20">
+    <header
+      class="pl-8 pr-8 sm:pl-20 sm:pr-20 lg:max-w-[69.375rem] lg:mx-0 lg:box-content">
       <nav class="primary-navigation group"
         aria-label="Primary navigation">
 
@@ -43,13 +44,13 @@
         <div class="menu-container pl-8 pr-8 sm:pl-20 sm:pr-20 md:pl-0 md:pr-0"
           id="primary-menu" data-visible="false">
           <ul class="primary-menu">
-            <li class><a href="/"
+            <li class><a href="/" class="hover:text-red-400 focus:text-red-400 focus:outline-0"
                 aria-label="link to the features related page">Features</a></li>
-            <li class><a href="/"
+            <li class><a href="/" class="hover:text-red-400 focus:text-red-400 focus:outline-0"
                 aria-label="link to the pricing related page">Pricing</a></li>
-            <li class><a href="/"
+            <li class><a href="/" class="hover:text-red-400 focus:text-red-400 focus:outline-0"
                 aria-label="link to the contact related page">Contact</a></li>
-            <li class><a class="button-base button-login" href="/"
+            <li class><a class="button-base button-login hover:text-red-400 focus:text-red-400 focus:outline-0" href="/"
                 aria-label="link to the login related page">Login</a></li>
           </ul>
           <ul class="social-media-list">
@@ -64,47 +65,60 @@
       </nav>
     </header>
 
-    <main class="overflow-x-hidden">
-      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mb-32 text-center">
-        <div class="img-bg mt-11 mb-24" aria-hidden="true">
+    <main class="overflow-x-hidden lg:mt-16">
+      <div
+        class="pl-8 pr-8 sm:pl-20 sm:pr-20 mb-32 text-center lg:flex lg:flex-row-reverse lg:items-center lg:justify-start lg:text-left lg:gap-[4rem] lg:max-w-[74rem] lg:mx-0 lg:box-content lg:mb-[11.25rem]">
+        <div
+          class="img-bg mt-11 mb-24 lg:grow-0 lg:shrink-1 lg:basis-[36.125rem] lg:m-0"
+          aria-hidden="true">
           <img class="bg-of-img"
             src="assets/images/background-shape.svg" alt>
           <img class="img-with-bg" src="assets/images/illustration-hero.svg"
             alt>
         </div>
-        <h1 class="mb-6 text-3xl/snug text-balance font-medium sm:text-5xl">A Simple
-          Bookmark Manager</h1>
+        <div class="lg:grow-0 lg:shrink lg:basis-[45%]">
+          <h1
+            class="mb-6 text-3xl/snug text-balance font-medium sm:text-5xl lg:text-[3rem] lg:leading-[1.1]">A
+            Simple
+            Bookmark Manager</h1>
 
-        <p class="mb-6 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">A clean and simple
-          interface to
-          organize your favourite websites.
-          Open
-          a
-          new
-          browser tab and see your sites load instantly. Try it for free.</p>
+          <p
+            class="mb-6 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">A
+            clean and simple
+            interface to
+            organize your favourite websites.
+            Open
+            a
+            new
+            browser tab and see your sites load instantly. Try it for free.</p>
 
-        <div class="flex gap-4 justify-center">
-          <button
-            class="button-base text-[.9375rem]/6 font-medium grow-0 shrink basis-[10.375rem]">Get
-            it
-            on Chrome</button>
-          <button
-            class="button-base text-[.9375rem]/6 font-medium button-variant grow-0 shrink basis-[10.375rem]">Get
-            it on
-            Firefox</button>
+          <div class="flex gap-4 justify-center lg:justify-start">
+            <button
+              class="button-base text-[.9375rem]/6 font-medium grow-0 shrink basis-[10.375rem]">Get
+              it
+              on Chrome</button>
+            <button
+              class="button-base text-[.9375rem]/6 font-medium button-variant grow-0 shrink basis-[10.375rem]">Get
+              it on
+              Firefox</button>
+          </div>
         </div>
       </div>
 
-      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mt-32 mb-32 text-center">
+      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mt-32 mb-32 text-center lg:pl-0 lg:pr-0 lg:mt-0 lg:mb-[15.75rem]">
         <h2 class="mb-6 text-3xl/snug text-balance font-medium">Features</h2>
-        <p class="mb-6 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Our aim is to make
+        <p
+          class="mb-6 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc lg:max-w-[33.75rem] lg:mx-auto">Our
+          aim is to make
           it quick and
           easy for you to access your favourite
           websites.
           Your bookmarks sync between your devices so you can access them on the
           go.</p>
 
-        <div class="tabs js-automatic sm:flex" role="tablist"
+        <div
+          class="tabs js-automatic sm:flex lg:max-w-[45.625rem] lg:mx-auto  lg:mb-[4.5rem]"
+          role="tablist"
           aria-label="tabs of features">
           <button class="tab" role="tab" aria-selected="false" id="tab1-button"
             aria-controls="tab1" tabindex="0">Simple
@@ -116,79 +130,107 @@
         </div>
 
         <div class="tab-content">
-          <div role="tabpanel" id="tab1" aria-labelledby="tab1-button"
+          <div
+            class="lg:flex lg:flex-row lg:items-center lg:justify-start lg:text-left lg:gap-[7.5rem]"
+            role="tabpanel" id="tab1" aria-labelledby="tab1-button"
             tabindex="0">
-            <div class="img-bg img-bg-right mt-11 mb-17" aria-hidden="true">
+            <div
+              class="img-bg img-bg-right mt-11 mb-17 lg:grow-0 lg:shrink-1 lg:basis-[33.5rem] lg:m-0"
+              aria-hidden="true">
               <img class="bg-of-img"
                 src="assets/images/background-shape.svg" alt>
               <img class="img-with-bg"
                 src="assets/images/illustration-features-tab-1.svg" alt>
             </div>
-            <h3 class="mb-4 text-3xl/snug text-balance font-medium">Bookmark in
-              one click</h3>
-            <p class="mb-4 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Organize your
-              bookmarks
-              however you like. Our simple drag-and-drop
-              interface
-              gives you complete control over how you manage your favourite
-              sites.</p>
-            <a
-              class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
-              href="/">More Info</a>
+            <div class="lg:grow-0 lg:shrink lg:basis-[45%]">
+              <h3 class="mb-4 text-3xl/snug text-balance font-medium">Bookmark
+                in
+                one click</h3>
+              <p
+                class="mb-4 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Organize
+                your
+                bookmarks
+                however you like. Our simple drag-and-drop
+                interface
+                gives you complete control over how you manage your favourite
+                sites.</p>
+              <a
+                class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
+                href="/">More Info</a>
+            </div>
           </div>
-          <div role="tabpanel" id="tab2" aria-labelledby="tab2-button" hidden>
-            <div class="img-bg img-bg-right mt-11 mb-17" aria-hidden="true">
+          <div
+            class="lg:flex lg:flex-row lg:items-center lg:justify-start lg:text-left lg:gap-[7.5rem]"
+            role="tabpanel" id="tab2" aria-labelledby="tab2-button" hidden>
+            <div
+              class="img-bg img-bg-right mt-11 mb-17 lg:grow-0 lg:shrink-1 lg:basis-[33.5rem] lg:m-0"
+              aria-hidden="true">
               <img class="bg-of-img"
                 src="assets/images/background-shape.svg" alt>
               <img class="img-with-bg"
                 src="assets/images/illustration-features-tab-2.svg" alt>
             </div>
-            <h3 class="mb-4 text-3xl/snug text-balance font-medium">Intelligent
-              search</h3>
-            <p class="mb-4 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Our powerful
-              search feature
-              will help you find saved sites in no
-              time
-              at
-              all.
-              No need to trawl through all of your bookmarks.</p>
-            <a
-              class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
-              href="/">More Info</a>
+            <div class="lg:grow-0 lg:shrink lg:basis-[45%]">
+              <h3
+                class="mb-4 text-3xl/snug text-balance font-medium">Intelligent
+                search</h3>
+              <p
+                class="mb-4 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Our
+                powerful
+                search feature
+                will help you find saved sites in no
+                time
+                at
+                all.
+                No need to trawl through all of your bookmarks.</p>
+              <a
+                class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
+                href="/">More Info</a>
+            </div>
           </div>
-          <div role="tabpanel" id="tab3" aria-labelledby="tab3-button" hidden>
-            <div class="img-bg img-bg-right mt-11 mb-17" aria-hidden="true">
+          <div
+            class="lg:flex lg:flex-row lg:items-center lg:justify-start lg:text-left lg:gap-[7.5rem]"
+            role="tabpanel" id="tab3" aria-labelledby="tab3-button" hidden>
+            <div
+              class="img-bg img-bg-right mt-11 mb-17 lg:grow-0 lg:shrink-1 lg:basis-[33.5rem] lg:m-0"
+              aria-hidden="true">
               <img class="bg-of-img"
                 src="assets/images/background-shape.svg" alt>
               <img class="img-with-bg"
                 src="assets/images/illustration-features-tab-3.svg" alt>
             </div>
-            <h3 class="mb-4 text-3xl/snug text-balance font-medium">Share your
-              bookmarks</h3>
-            <p class="mb-4 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Easily share
-              your bookmarks
-              and collections with others. Create a
-              shareable
-              link that you can send at the click of a button.</p>
-            <a
-              class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
-              href="/">More Info</a>
+            <div class="lg:grow-0 lg:shrink lg:basis-[45%]">
+              <h3 class="mb-4 text-3xl/snug text-balance font-medium">Share your
+                bookmarks</h3>
+              <p
+                class="mb-4 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Easily
+                share
+                your bookmarks
+                and collections with others. Create a
+                shareable
+                link that you can send at the click of a button.</p>
+              <a
+                class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
+                href="/">More Info</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mt-32 mb-32 text-center">
+      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mt-32 mb-32 text-center lg:pl-0 lg:pr-0 lg:mt-0 lg:mb-[10rem]">
         <h2 class="mb-4 text-3xl/snug text-balance font-medium">Download the
           extension</h2>
-        <p class="mb-10 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">We’ve got more
+        <p
+          class="mb-10 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc lg:max-w-[33.75rem] lg:mx-auto">We’ve
+          got more
           browsers
           in the
           pipeline. Please do let us know if
           you’ve
           got a favourite you’d like us to prioritize.</p>
 
-        <div class="extension-cards-group sm:flex sm:gap-2">
+        <div class="extension-cards-group sm:flex sm:justify-center sm:items-start sm:gap-2 lg:max-w-[56.5rem] lg:mx-auto lg:gap-8">
           <div
-            class="extension-card mb-10 pt-8 pb-8 shadow-card rounded-2xl pl-4 pr-4 sm:flex sm:flex-col sm:pl-2 sm:pr-2">
+            class="extension-card mb-10 pt-8 pb-8 shadow-card rounded-2xl pl-4 pr-4 sm:flex sm:flex-col sm:pl-2 sm:pr-2 lg:mb-0">
             <img class="m-auto mb-8 sm:m-[0 auto auto]"
               src="assets/images/logo-chrome.svg" alt
               aria-hidden="true">
@@ -208,7 +250,7 @@
               Extension</button>
           </div>
           <div
-            class="extension-card mb-10 pt-8 pb-8 shadow-card rounded-2xl pl-4 pr-4 sm:flex sm:flex-col sm:pl-2 sm:pr-2">
+            class="extension-card mb-10 pt-8 pb-8 shadow-card rounded-2xl pl-4 pr-4 sm:flex sm:flex-col sm:pl-2 sm:pr-2 lg:mb-0 lg:mt-10">
             <img class="m-auto mb-8 sm:m-[0 auto auto]"
               src="assets/images/logo-firefox.svg" alt
               aria-hidden="true">
@@ -228,7 +270,7 @@
               Extension</button>
           </div>
           <div
-            class="extension-card mb-10 pt-8 pb-8 shadow-card rounded-2xl pl-4 pr-4 sm:flex sm:flex-col sm:pl-2 sm:pr-2">
+            class="extension-card mb-10 pt-8 pb-8 shadow-card rounded-2xl pl-4 pr-4 sm:flex sm:flex-col sm:pl-2 sm:pr-2 lg:mb-0 lg:mt-20">
             <img class="m-auto mb-8 sm:m-[0 auto auto]"
               src="assets/images/logo-opera.svg" alt
               aria-hidden="true">
@@ -249,10 +291,12 @@
           </div>
         </div>
       </div>
-      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mt-32 mb-32 text-center">
+      <div class="pl-8 pr-8 sm:pl-20 sm:pr-20 mt-32 mb-32 text-center lg:pl-0 lg:pr-0 lg:mt-0 lg:mb-[11.25rem] lg:max-w-[33.75rem] lg:mx-auto">
         <h2 class="mb-4 text-3xl/snug text-balance font-medium">Frequently Asked
           Questions</h2>
-        <p class="mb-10 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Here are some of
+        <p
+          class="mb-10 text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">Here
+          are some of
           our
           FAQs. If you
           have any other questions you’d like
@@ -260,7 +304,7 @@
         <div class="questions-answers text-left mb-14">
           <div class="pt-4 pb-4 border-b border-b-faint-blue">
             <h3
-              class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
+              class="question text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
               <button
                 class="peer focus:outline-0 focus-visible:outline-0 focus:text-red-400 focus-visible:text-red-400"
                 id="question1"
@@ -276,7 +320,8 @@
             </h3>
             <section class="pt-4" id="answer1" aria-labelledby="question1"
               hidden>
-              <p class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
+              <p
+                class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 tincidunt
                 justo eget ultricies fringilla. Phasellus blandit ipsum quis
@@ -287,7 +332,7 @@
           </div>
           <div class="pt-4 pb-4 border-b border-b-faint-blue">
             <h3
-              class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
+              class="question text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
               <button
                 class="peer focus:outline-0 focus-visible:outline-0 focus:text-red-400 focus-visible:text-red-400"
                 id="question2" aria-expanded="false"
@@ -302,7 +347,8 @@
             </h3>
             <section class="pt-4" id="answer2" aria-labelledby="question2"
               hidden>
-              <p class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
+              <p
+                class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
                 massa,
                 ultricies non ligula.
@@ -316,7 +362,7 @@
           </div>
           <div class="pt-4 pb-4 border-b border-b-faint-blue">
             <h3
-              class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
+              class="question text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
               <button
                 class="peer focus:outline-0 focus-visible:outline-0 focus:text-red-400 focus-visible:text-red-400"
                 id="question3" aria-expanded="false"
@@ -330,7 +376,8 @@
             </h3>
             <section class="pt-4" id="answer3" aria-labelledby="question3"
               hidden>
-              <p class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
+              <p
+                class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
                 Sed consectetur quam id neque fermentum accumsan. Praesent
                 luctus
                 vestibulum dolor, ut condimentum
@@ -343,7 +390,7 @@
           </div>
           <div class="pt-4 pb-4 border-b border-b-faint-blue">
             <h3
-              class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
+              class="question text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950 hover:text-red-400 focus:text-red-400 flex justify-between items-center">
               <button
                 class="peer focus:outline-0 focus-visible:outline-0 focus:text-red-400 focus-visible:text-red-400"
                 id="question4" aria-expanded="false"
@@ -358,7 +405,8 @@
             </h3>
             <section class="pt-4" id="answer4" aria-labelledby="question4"
               hidden>
-              <p class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
+              <p
+                class="text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] text-blue-950-50pc">
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
                 placerat
                 mi, at euismod dui. Aliquam
@@ -367,7 +415,6 @@
             </section>
           </div>
         </div>
-
         <a
           class="button-base text-[.9375rem]/6 font-medium inline-block pl-5 pr-5"
           href="/">More Info</a>
@@ -406,7 +453,7 @@
     <footer
       class="p-8 bg-blue-950 text-white text-center sm:pl-20 sm:pr-20 ssm:pb-1">
       <div
-        class="flex flex-col items-center ssm:flex-row ssm:justify-between ssm:mb-6 ssm:gap-6">
+        class="flex flex-col items-center ssm:flex-row ssm:justify-between ssm:mb-6 ssm:gap-6 lg:max-w-[69.375rem] lg:mx-auto lg:box-content lg:justify-start lg:gap-16">
         <div class="mb-12 ssm:mb-0">
           <p class="sr-only" id="footer-bookmark-logo-label">Brand logo of
             Bookmark</p>
@@ -421,7 +468,7 @@
                   fill="#FFF" /></g></g></svg>
         </div>
         <ul
-          class="mb-12 ssm:mb-0 flex flex-col gap-6 uppercase text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] ssm:grow-0 ssm:shrink ssm:basis-3xs ssm:flex-row ssm:justify-between ssm:items-center ssm:gap-0">
+          class="mb-12 ssm:mb-0 flex flex-col gap-6 uppercase text-[.9375rem]/6 sm:text-[1.125rem] sm:leading-[1.5] ssm:grow-0 ssm:shrink ssm:basis-3xs ssm:flex-row ssm:justify-between ssm:items-center ssm:gap-0 lg:gap-12">
           <li><a class="hover:text-red-400 focus:text-red-400 focus:outline-0"
               href="/"
               aria-label="link to the features related page">Features</a></li>
@@ -433,7 +480,7 @@
               aria-label="link to the contact related page">Contact</a></li>
         </ul>
 
-        <ul class="mb-12 ssm:mb-0 social-media-list">
+        <ul class="mb-12 ssm:mb-0  flex flex-row justify-center items-center gap-10 ssm:gap-4 lg:ml-auto lg:mr-0 lg:gap-10">
           <li>
             <a class="group" href="/">
               <span class="sr-only" id="facebook-logo-label">Link to the

@@ -102,8 +102,11 @@
 
 [type="submit"]:hover,
 [type="submit"]:focus,
-[type="submit"]:focus-visible {
-  @apply text-red-400;
+[type="submit"]:focus-visible,
+.button-login:hover,
+.button-login:focus,
+.button-login:focus-visible {
+  @apply text-red-400 outline-0;
 }
 
 /* ********* */
@@ -156,7 +159,3 @@
 
 
 /* *********** */
-
-.social-media-list {
-  @apply flex flex-row justify-center items-center gap-10 ssm:gap-4;
-}
