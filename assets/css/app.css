@@ -1058,7 +1058,7 @@
     justify-content: space-between;
   }
 }
-.menu-container li {
+.primary-menu li {
   display: block;
   border-top-style: var(--tw-border-style);
   border-top-width: 1px;
