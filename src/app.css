@@ -45,7 +45,7 @@
 }
 
 .mobile-nav-toggle {
-  @apply md:hidden relative z-2000 bg-[url(/assets/images/icon-hamburger.svg)] group-has-[div[data-visible='true']]:bg-[url(/assets/images/icon-close.svg)] bg-center bg-no-repeat w-[1.125rem] aspect-square;
+  @apply md:hidden relative z-2000 bg-[url(../images/icon-hamburger.svg)] group-has-[div[data-visible='true']]:bg-[url(../images/icon-close.svg)] bg-center bg-no-repeat w-[1.125rem] aspect-square;
 }
 
 .menu-container {
