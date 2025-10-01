@@ -21,9 +21,9 @@ class TabsAutomatic {
     this.tabs = Array.from(this.tablistNode.querySelectorAll('[role=tab]'));
     this.tabpanels = [];
 
-    for (var i = 0; i < this.tabs.length; i += 1) {
-      var tab = this.tabs[i];
-      var tabpanel = document.getElementById(tab.getAttribute('aria-controls'));
+    for (let i = 0; i < this.tabs.length; i += 1) {
+      const tab = this.tabs[i];
+      const tabpanel = document.getElementById(tab.getAttribute('aria-controls'));
 
       tab.tabIndex = -1;
       tab.setAttribute('aria-selected', 'false');
@@ -45,8 +45,8 @@ class TabsAutomatic {
     if (typeof setFocus !== 'boolean') {
       setFocus = true;
     }
-    for (var i = 0; i < this.tabs.length; i += 1) {
-      var tab = this.tabs[i];
+    for (let i = 0; i < this.tabs.length; i += 1) {
+      const tab = this.tabs[i];
       if (currentTab === tab) {
         tab.setAttribute('aria-selected', 'true');
         tab.removeAttribute('tabindex');
@@ -63,7 +63,7 @@ class TabsAutomatic {
   }
 
   setSelectedToPreviousTab(currentTab) {
-    var index;
+    let index = 0;
 
     if (currentTab === this.firstTab) {
       this.setSelectedTab(this.lastTab);
@@ -74,7 +74,7 @@ class TabsAutomatic {
   }
 
   setSelectedToNextTab(currentTab) {
-    var index;
+    let index = 0;
 
     if (currentTab === this.lastTab) {
       this.setSelectedTab(this.firstTab);
@@ -87,7 +87,7 @@ class TabsAutomatic {
   /* EVENT HANDLERS */
 
   onKeydown(event) {
-    var tgt = event.currentTarget,
+    let tgt = event.currentTarget,
       flag = false;
 
     switch (event.key) {
@@ -148,10 +148,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const expanded = this.firstElementChild.getAttribute("aria-expanded") === "true" || false;
       const accordionPanel = document.getElementById(this.firstElementChild.getAttribute("aria-controls"));
 
-      accordionQuestions.forEach((question) => {
-        question.firstElementChild.setAttribute("aria-expanded", "false");
+      accordionQuestions.forEach((q) => {
+        q.firstElementChild.setAttribute("aria-expanded", "false");
         document.getElementById(
-          question.firstElementChild.getAttribute("aria-controls")
+          q.firstElementChild.getAttribute("aria-controls")
         ).hidden = true;
       });
 
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector(".mobile-nav-toggle");
 
   menuButton.addEventListener('click', (e) => {
-    let isVisible = menu.dataset.visible;
+    const isVisible = menu.dataset.visible;
 
     if(isVisible === 'false'){
       menu.dataset.visible = true;
