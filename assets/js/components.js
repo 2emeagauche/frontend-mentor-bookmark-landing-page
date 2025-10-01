@@ -189,23 +189,26 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
 
     let isValid = true;
+    let firstInvalidField = null;
 
     const fields = form.querySelectorAll("input");
 
     fields.forEach((field) => {
-      console.log(`Checking ${field.name}`);
       const fieldValid = validateField(field);
 
       if (!fieldValid) {
         isValid = false;
+        if (!firstInvalidField) {
+          firstInvalidField = field;
+        }
       }
     });
 
     if (isValid) {
       // send form data
       form.reset();
-    } else {
-      form.querySelector(":invalid").focus();
+    } else  if (firstInvalidField) {
+      firstInvalidField.focus();
     }
   });
 
@@ -220,10 +223,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(isVisible === 'false'){
       menu.dataset.visible = true;
-      e.target.setAttribute('aria-expanded', 'true');
+      menuButton.setAttribute('aria-expanded', 'true');
     } else {
       menu.dataset.visible = false;
-      e.target.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-expanded', 'false');
     }
 
   });
