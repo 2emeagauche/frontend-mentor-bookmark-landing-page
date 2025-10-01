@@ -87,7 +87,7 @@ class TabsAutomatic {
   /* EVENT HANDLERS */
 
   onKeydown(event) {
-    let tgt = event.currentTarget,
+    const tgt = event.currentTarget,
       flag = false;
 
     switch (event.key) {
